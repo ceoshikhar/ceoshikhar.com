@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <main>
+      <img
+        src="/favicon.jpg"
+        alt="my avatar"
+        height="200px"
+        style={{ borderRadius: '50%' }}
+      />
+      <h1>I AM WORKING HERE! I AM WORKING HERE!</h1>
+      <p>
+        Untill I am done working here, you can hit me up on
+        <a href="mailto: ceoshikhar@gmail.com" style={{ marginLeft: '0.35em' }}>
+          ceoshikhar@gmail.com
         </a>
-      </header>
-    </div>
+      </p>
+    </main>
   );
 }
 
