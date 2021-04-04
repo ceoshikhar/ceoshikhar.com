@@ -4,7 +4,7 @@ module.exports = {
     title: `Shikhar Sharma's small space on the internet`,
     titleTemplate: `%s - CEOShikhar`,
     description: `My name is Shikhar Sharma AKA CEOShikhar. I am an entrepreneur, developer and an artist. Welcome to my small space on the internet.`,
-    siteUrl: `https://www.ceoshikhar.com`,
+    siteUrl: `https://ceoshikhar.com`,
     language: `en`,
     color: `#0A0A0A`,
     twitter: 'ceoshikhar',
@@ -34,6 +34,20 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
         include_favicon: true, // Include favicon
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://ceoshikhar.com`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://ceoshikhar.com`,
+        sitemap: `https://ceoshikhar.com/sitemap.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }],
       },
     },
     `gatsby-plugin-sitemap`,
