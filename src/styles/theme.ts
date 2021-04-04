@@ -23,7 +23,7 @@ export const dark: ITheme = {
     background: '#121212',
     background2: '#0D0D0D',
     surface: '#1E1E1E',
-    primary: '#047DC4',
+    primary: '#298FCA',
     onBackground: '#F0F0F0',
     onSurface: '#E1E1E1',
     onPrimary: '#F0F0F0',
