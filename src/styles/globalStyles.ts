@@ -3,6 +3,12 @@ import { ITheme } from './theme'
 
 export default createGlobalStyle<{ theme: ITheme }>`
 
+/**
+ * Fonts:
+ * font-family: 'Montserrat', sans-serif;
+ * font-family: 'Poppins', sans-serif;
+ */
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
