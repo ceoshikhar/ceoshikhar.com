@@ -1,29 +1,12 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
-import styled from 'styled-components'
+import * as React from "react";
+import styled from "styled-components";
 
-import Layout from '../layout/index'
-
-import Image from '../components/Image'
-import Heading from '../components/Heading'
-
-import { GatsbyImageFluidProps } from 'gatsby-image'
+import { Layout } from "../components/Layout";
 
 interface IndexPageProps {
   location: {
-    pathname: string
-  }
-  data: {
-    image: {
-      childImageSharp: GatsbyImageFluidProps
-    }
-    site: {
-      siteMetadata: {
-        title: string
-        description: string
-      }
-    }
-  }
+    pathname: string;
+  };
 }
 
 const Wrapper = styled.div`
@@ -33,35 +16,17 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  background: rgb(0, 53, 128);
-`
+  background: ${(props) => props.theme.color.background};
+`;
 
-export default ({ data, location }: IndexPageProps) => {
-  const { image, site } = data
+const NotFound = ({ location }: IndexPageProps) => {
   return (
     <Layout location={location}>
       <Wrapper>
-        <Image img={image.childImageSharp} />
-        <Heading
-          title="404 Page not found!"
-          subtitle={site.siteMetadata.description}
-        />
+        <h1>404 Page not found!</h1>
       </Wrapper>
     </Layout>
-  )
-}
+  );
+};
 
-export const NotFoundQuery = graphql`
-  query NotFoundPageQuery {
-    image: file(relativePath: { eq: "icon.png" }) {
-      ...fluidImage
-    }
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`
+export default NotFound;

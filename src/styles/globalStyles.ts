@@ -1,12 +1,12 @@
-import { createGlobalStyle } from 'styled-components'
-import { ITheme } from './theme'
+import { createGlobalStyle } from "styled-components";
+import { ITheme } from "./theme";
 
 export default createGlobalStyle<{ theme: ITheme }>`
 
 /**
  * Fonts:
- * font-family: 'Montserrat', sans-serif;
  * font-family: 'Poppins', sans-serif;
+ * font-family: 'Vollkorn', sans-serif;
  */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -378,4 +378,4 @@ template {
 [hidden] {
   display: none;
 }
-`
+`;
