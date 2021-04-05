@@ -6,7 +6,7 @@ export const Hero: React.FC = () => {
   return (
     <Wrapper id="hero">
       <StaticImage
-        src="../images/me.png"
+        src="../../../images/me.png"
         alt="me"
         placeholder="blurred"
         width={250}

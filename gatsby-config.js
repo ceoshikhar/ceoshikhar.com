@@ -1,7 +1,11 @@
+const dotenv=require('dotenv');
+dotenv.config();
+
 module.exports = {
   siteMetadata: {
     site: `CEOShikhar`,
     title: `Shikhar Sharma's small space on the internet`,
+    author: `Shikhar Sharma`,
     titleTemplate: `%s - CEOShikhar`,
     description: `My name is Shikhar Sharma AKA CEOShikhar. An entrepreneur, developer and sometimes an artist. Welcome to my small space on the internet.`,
     siteUrl: `https://ceoshikhar.com`,
@@ -56,10 +60,17 @@ module.exports = {
       options: {
         fonts: [
           `Poppins:400,700`,
-          `Vollkorn:400,700`
+          `Vollkorn:400,700`,
+          `Roboto:300,400,500,700`
         ],
         display: 'swap'
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID,
+      },
     },
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-typescript`,

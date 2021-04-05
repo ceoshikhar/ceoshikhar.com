@@ -9,6 +9,7 @@ interface ISiteMetaData {
   siteUrl: string;
   titleTemplate: string;
   twitter: string;
+  author: string;
 }
 
 export const useSiteMetadata = (): ISiteMetaData => {
@@ -39,7 +40,8 @@ export const useSiteMetadata = (): ISiteMetaData => {
     site: _meta.site,
     siteUrl: _meta.siteUrl,
     titleTemplate: _meta.titleTemplate,
-    twitter: _meta.twitter
+    twitter: _meta.twitter,
+    author: _meta.author
   };
 
   return siteMetaData;

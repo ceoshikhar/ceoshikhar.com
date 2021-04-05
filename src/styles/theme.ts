@@ -1,3 +1,5 @@
+import { DefaultTheme } from "styled-components";
+
 export interface IColor {
   background: string;
   background2: string;
@@ -12,12 +14,7 @@ export interface IColor {
 
 export type ThemeKind = "dark" | "light";
 
-export interface ITheme {
-  name: ThemeKind;
-  color: IColor;
-}
-
-export const dark: ITheme = {
+export const dark: DefaultTheme = {
   name: "dark",
   color: {
     background: "#121212",

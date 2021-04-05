@@ -1,12 +1,13 @@
 // In your routes configuration file
-const path = require('path')
+const path = require("path");
+
 module.exports = [
   {
-    path: '/',
-    component: path.resolve(`src/containers/index.tsx`),
+    path: "/",
+    component: path.resolve(`src/pages/index/index.tsx`)
   },
   {
-    path: '/404/',
-    component: path.resolve(`src/containers/404.tsx`),
-  },
-]
+    path: "/404/",
+    component: path.resolve(`src/pages/404.tsx`)
+  }
+];

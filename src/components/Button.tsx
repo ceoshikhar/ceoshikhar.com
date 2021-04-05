@@ -1,17 +1,29 @@
 import * as React from "react";
 import styled from "styled-components";
+import { IconType } from "react-icons";
+import { Spacer } from "./Spacer";
 
 export interface IButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   title: string;
   disabled?: boolean;
+  Icon?: IconType;
 }
 
 export const Button: React.FC<IButtonProps> = (props) => {
-  const { disabled, title, ...rest } = props;
+  const { disabled, title, Icon, onClick, ...rest } = props;
+
+  if (disabled) return null;
 
   return (
-    <Container disabled={disabled} type="button" {...rest}>
+    <Container type="button" onClick={onClick} {...rest}>
       <ButtonBody>
+        {Icon && (
+          <>
+            <Icon />
+            <Spacer r={8} />
+          </>
+        )}
+
         <Title>{title}</Title>
       </ButtonBody>
       <OutlineBehind />

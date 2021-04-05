@@ -1,10 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
-import { Button } from "../components/Button";
 
 import { Layout } from "../components/Layout";
-import { Spacer } from "../components/Spacer";
-import { Hero } from "../sections/Hero";
 
 interface IndexPageProps {
   location: {
@@ -14,23 +11,22 @@ interface IndexPageProps {
 
 const Wrapper = styled.div`
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: ${(props) => props.theme.color.background};
 `;
 
-const IndexPage: React.FC<IndexPageProps> = (props) => {
+const NotFound = ({ location }: IndexPageProps) => {
   return (
-    <Layout pathname={props.location.pathname}>
+    <Layout pathname={location.pathname}>
       <Wrapper>
-        <Hero />
-        <Spacer b={64} />
-        <Button title="Let's work together" />
+        <h1>404 Page not found!</h1>
       </Wrapper>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default NotFound;
