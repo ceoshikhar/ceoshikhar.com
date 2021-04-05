@@ -2,8 +2,8 @@ import { Tooltip } from "@material-ui/core";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import { useTheme } from "styled-components";
-import { Button } from "../../../components/Button";
-import { FiSend } from "../../../components/Icons";
+import { Button } from "../../components/Button";
+import { FiSend } from "../../components/Icons";
 
 export const WorkTogether = () => {
   const theme = useTheme();

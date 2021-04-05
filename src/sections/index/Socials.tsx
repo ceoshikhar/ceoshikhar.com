@@ -1,6 +1,6 @@
 import * as React from "react";
 import styled, { useTheme } from "styled-components";
-import { socialData } from "../../../data/social";
+import { socialData } from "../../data/social";
 import Tooltip from "@material-ui/core/Tooltip";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 

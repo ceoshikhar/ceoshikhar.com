@@ -1,11 +1,11 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { Layout } from "../../components/Layout";
-import { Spacer } from "../../components/Spacer";
-import { Hero } from "./sections/Hero";
-import { Socials } from "./sections/Socials";
-import { WorkTogether } from "./sections/WorkTogether";
+import { Layout } from "../components/Layout";
+import { Spacer } from "../components/Spacer";
+import { Hero } from "../sections/index/Hero";
+import { Socials } from "../sections/index/Socials";
+import { WorkTogether } from "../sections/index/WorkTogether";
 
 interface IndexPageProps {
   location: {

@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = [
   {
     path: "/",
-    component: path.resolve(`src/pages/index/index.tsx`)
+    component: path.resolve(`src/pages/index.tsx`)
   },
   {
     path: "/404/",
