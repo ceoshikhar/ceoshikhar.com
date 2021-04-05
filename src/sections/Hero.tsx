@@ -17,7 +17,9 @@ export const Hero: React.FC = () => {
           borderRadius: "50%"
         }}
       />
+
       <Name>SHIKHAR SHARMA</Name>
+
       <OneLiner>An entrepreneur, developer and sometimes an artist.</OneLiner>
     </Wrapper>
   );

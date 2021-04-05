@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import { Button } from "../components/Button";
 
 import { Layout } from "../components/Layout";
 import { Hero } from "../sections/Hero";
@@ -24,6 +25,7 @@ const IndexPage: React.FC<IndexPageProps> = (props) => {
     <Layout pathname={props.location.pathname}>
       <Wrapper>
         <Hero />
+        <Button title="Let's work together" />
       </Wrapper>
     </Layout>
   );
