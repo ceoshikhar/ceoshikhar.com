@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
         width={250}
         height={250}
         style={{
-          border: "3px solid #298FCA",
+          border: "2px solid #298FCA",
           borderRadius: "50%"
         }}
       />
@@ -37,7 +37,7 @@ const Name = styled.h1`
   margin-top: 0.5em;
 `;
 
-const OneLiner = styled.h3`
+const OneLiner = styled.h2`
   font-family: "Vollkorn";
   font-weight: 400;
   font-size: 1.5rem;

@@ -19,9 +19,9 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const IndexPage = ({ location }: IndexPageProps) => {
+const IndexPage: React.FC<IndexPageProps> = (props) => {
   return (
-    <Layout location={location}>
+    <Layout pathname={props.location.pathname}>
       <Wrapper>
         <Hero />
       </Wrapper>

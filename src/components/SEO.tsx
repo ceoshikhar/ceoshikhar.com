@@ -2,10 +2,10 @@ import * as React from "react";
 import { Helmet } from "react-helmet";
 import { useSiteMetadata } from "../hooks/useSiteMetaData";
 
-interface ISEOProps {
+export interface ISEOProps {
+  pathname: string;
   article?: boolean;
   description?: string;
-  pathname: string;
   thumbnail?: string;
   title?: string;
 }

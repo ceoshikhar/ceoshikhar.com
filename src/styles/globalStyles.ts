@@ -20,6 +20,7 @@ export default createGlobalStyle<{ theme: ITheme }>`
  */
 
 html {
+  font-size: 16px;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -42,11 +43,12 @@ body {
 
 /**Scrollbar customization */
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 body::-webkit-scrollbar-track {
-  background: ${(props) => props.theme.color.background2} 
+  background: ${(props) => props.theme.color.surface} 
 }
 
 body::-webkit-scrollbar-thumb {
