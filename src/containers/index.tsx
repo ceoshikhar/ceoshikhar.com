@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Button } from "../components/Button";
 
 import { Layout } from "../components/Layout";
+import { Spacer } from "../components/Spacer";
 import { Hero } from "../sections/Hero";
 
 interface IndexPageProps {
@@ -25,6 +26,7 @@ const IndexPage: React.FC<IndexPageProps> = (props) => {
     <Layout pathname={props.location.pathname}>
       <Wrapper>
         <Hero />
+        <Spacer b={64} />
         <Button title="Let's work together" />
       </Wrapper>
     </Layout>

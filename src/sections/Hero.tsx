@@ -9,7 +9,6 @@ export const Hero: React.FC = () => {
         src="../images/me.png"
         alt="me"
         placeholder="blurred"
-        layout="fixed"
         width={250}
         height={250}
         style={{
@@ -30,6 +29,7 @@ const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 `;
 
 const Name = styled.h1`
