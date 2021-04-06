@@ -13,25 +13,38 @@ interface IndexPageProps {
   };
 }
 
-const Wrapper = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
 const IndexPage: React.FC<IndexPageProps> = (props) => {
   return (
     <Layout pathname={props.location.pathname}>
       <ForkOnGitHub />
       <Wrapper>
-        <Hero />
-        <WorkTogether />
-        <Socials />
+        <Content>
+          <Hero />
+          <WorkTogether />
+          <Socials />
+        </Content>
       </Wrapper>
     </Layout>
   );
 };
 
 export default IndexPage;
+
+const Content = styled.div`
+  min-height: 625px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  ${(props) => props.theme.screen.md} {
+    min-height: 500px;
+  }
+`;
+
+const Wrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
