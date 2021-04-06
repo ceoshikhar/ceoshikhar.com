@@ -25,7 +25,7 @@ const Wrapper = styled.section`
   text-align: center;
 
   .image {
-    border: 2px solid #298fca;
+    border: 2px solid ${(props) => props.theme.color.primary};
     border-radius: 50%;
     width: 250px;
     height: 250px;

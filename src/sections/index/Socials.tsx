@@ -21,7 +21,11 @@ export const Socials: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icon className="icon" color={theme.color.surface} size={32} />
+                <Icon
+                  className="icon"
+                  color={theme.color.onBackground}
+                  size={32}
+                />
               </OutboundLink>
             </div>
           </Tooltip>
@@ -40,14 +44,9 @@ const Wrapper = styled.div`
   top: 0;
 
   .icon {
-    opacity: 15%;
-
     &:hover {
       position: relative;
       top: 2px;
-      /*  Don't want it to color.surface as that's complete white */
-      fill: ${(props) => props.theme.color.onBackground};
-      opacity: 100%;
       transition: ${NiceTransition};
     }
   }
