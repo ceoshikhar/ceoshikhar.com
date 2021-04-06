@@ -24,11 +24,11 @@ const Wrapper = styled.div`
 const IndexPage: React.FC<IndexPageProps> = (props) => {
   return (
     <Layout pathname={props.location.pathname}>
+      <ForkOnGitHub />
       <Wrapper>
         <Hero />
         <WorkTogether />
         <Socials />
-        <ForkOnGitHub />
       </Wrapper>
     </Layout>
   );

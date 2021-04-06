@@ -25,8 +25,7 @@ export const ForkOnGitHub: React.FC = () => {
 
 const Wrapper = styled.div`
   position: absolute;
-  top: 8px;
-  right: 8px;
+  right: 0;
   transition: ${NiceTransition};
 
   .icon {
