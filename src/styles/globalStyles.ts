@@ -1,12 +1,11 @@
-import { createGlobalStyle } from 'styled-components'
-import { ITheme } from './theme'
+import { createGlobalStyle, DefaultTheme } from "styled-components";
 
-export default createGlobalStyle<{ theme: ITheme }>`
+export default createGlobalStyle<{ theme: DefaultTheme }>`
 
 /**
  * Fonts:
- * font-family: 'Montserrat', sans-serif;
  * font-family: 'Poppins', sans-serif;
+ * font-family: 'Vollkorn', sans-serif;
  */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -20,6 +19,7 @@ export default createGlobalStyle<{ theme: ITheme }>`
  */
 
 html {
+  font-size: 16px;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -42,11 +42,12 @@ body {
 
 /**Scrollbar customization */
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5em;
+  height: 0.5em;
 }
 
 body::-webkit-scrollbar-track {
-  background: ${(props) => props.theme.color.background2} 
+  background: ${(props) => props.theme.color.surface} 
 }
 
 body::-webkit-scrollbar-thumb {
@@ -378,4 +379,4 @@ template {
 [hidden] {
   display: none;
 }
-`
+`;
