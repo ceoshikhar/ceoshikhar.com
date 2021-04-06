@@ -23,7 +23,6 @@ export const Button: React.FC<IButtonProps> = (props) => {
             <Spacer r={8} />
           </>
         )}
-
         <Title>{title}</Title>
       </ButtonBody>
       <OutlineBehind />
@@ -31,7 +30,7 @@ export const Button: React.FC<IButtonProps> = (props) => {
   );
 };
 
-const Transition = `all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)`;
+export const NiceTransition = `all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)`;
 
 const Container = styled.button`
   position: relative;
@@ -63,16 +62,16 @@ const ButtonBody = styled.div`
   z-index: 20;
   top: 0;
   right: 0;
-  transition: ${Transition};
+  transition: ${NiceTransition};
 
   &:hover {
-    transition: ${Transition};
+    transition: ${NiceTransition};
     top: 2px;
     right: 2px;
   }
 
   &:active {
-    transition: ${Transition};
+    transition: ${NiceTransition};
     top: 5px;
     right: 5px;
   }

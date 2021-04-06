@@ -1,10 +1,10 @@
 import {
   IconType,
-  FaInstagram,
-  FaDev,
-  FaGithub,
-  FaLinkedin,
-  FaTwitter
+  Instagram,
+  LinkedIn,
+  GitHub,
+  Twitter,
+  Dev
 } from "../components/Icons";
 
 interface ISocialDetails {
@@ -17,26 +17,26 @@ export const socialData: Array<ISocialDetails> = [
   {
     title: "LinkedIn",
     link: "https://linkedin.com/in/ceoshikhar",
-    Icon: FaLinkedin
+    Icon: LinkedIn
   },
   {
     title: "GitHub",
     link: "https://github.com/ceoshikhar",
-    Icon: FaGithub
+    Icon: GitHub
   },
   {
     title: "Instagram",
     link: "https://instagram.com/ceoshikhar",
-    Icon: FaInstagram
+    Icon: Instagram
   },
   {
     title: "Twitter",
     link: "https://twitter.com/ceoshikhar",
-    Icon: FaTwitter
+    Icon: Twitter
   },
   {
     title: "DEV Community",
     link: "https://dev.to/ceoshikhar",
-    Icon: FaDev
+    Icon: Dev
   }
 ];

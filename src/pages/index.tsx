@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { Layout } from "../components/Layout";
 import { Spacer } from "../components/Spacer";
+import { ForkOnGitHub } from "../sections/index/ForkOnGitHub";
 import { Hero } from "../sections/index/Hero";
 import { Socials } from "../sections/index/Socials";
 import { WorkTogether } from "../sections/index/WorkTogether";
@@ -14,7 +15,6 @@ interface IndexPageProps {
 }
 
 const Wrapper = styled.div`
-  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,7 @@ const IndexPage: React.FC<IndexPageProps> = (props) => {
         <WorkTogether />
         <Spacer b={145} />
         <Socials />
+        <ForkOnGitHub />
       </Wrapper>
     </Layout>
   );

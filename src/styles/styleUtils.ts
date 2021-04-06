@@ -1,7 +1,6 @@
-import { css, ThemedCssFunction } from "styled-components";
-import { ITheme } from "./theme";
+import { css, ThemedCssFunction, DefaultTheme } from "styled-components";
 
-const sizes = {
+export const sizes = {
   xl: 1366,
   lg: 1024,
   md: 768,
@@ -19,7 +18,7 @@ export const media = (Object.keys(sizes) as Array<keyof typeof sizes>).reduce(
     return accumulator;
   },
   // eslint-disable-next-line no-unused-vars
-  {} as { [key in keyof typeof sizes]: ThemedCssFunction<ITheme> }
+  {} as { [key in keyof typeof sizes]: ThemedCssFunction<DefaultTheme> }
 );
 
 export const px2em = (px: number) => `${px / 16}em`;

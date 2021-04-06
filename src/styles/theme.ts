@@ -1,4 +1,7 @@
 import { DefaultTheme } from "styled-components";
+import { px2em, sizes } from "../styles/styleUtils";
+
+export type ThemeKind = "dark" | "light";
 
 export interface IColor {
   background: string;
@@ -12,17 +15,30 @@ export interface IColor {
   onSecondary?: string;
 }
 
-export type ThemeKind = "dark" | "light";
+export interface IScreen {
+  xl: string;
+  lg: string;
+  md: string;
+  sm: string;
+}
 
 export const dark: DefaultTheme = {
   name: "dark",
   color: {
     background: "#121212",
     background2: "#0D0D0D",
-    surface: "#1E1E1E",
+    // Apply `opacity: x%` to get desired surface color.
+    // Checkout: https://material.io/design/color/dark-theme.html#properties
+    surface: "#FFFFFF",
     primary: "#298FCA",
     onBackground: "#F0F0F0",
     onSurface: "#E1E1E1",
     onPrimary: "#F0F0F0"
+  },
+  screen: {
+    xl: `only screen and (max-width: ${px2em(sizes.xl)}px)`,
+    lg: `only screen and (max-width: ${px2em(sizes.lg)}px)`,
+    md: `only screen and (max-width: ${px2em(sizes.md)}px)`,
+    sm: `only screen and (max-width: ${px2em(sizes.sm)}px)`
   }
 };
