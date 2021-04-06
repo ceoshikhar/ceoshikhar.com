@@ -23,23 +23,20 @@ const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 4em;
 
   .image {
     border: 2px solid #298fca;
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 
   ${(props) => props.theme.screen.md} {
-    margin-bottom: 2em;
-
     .image {
+      margin-bottom: 0.5em;
       width: 200px;
       height: 200px;
-      margin-bottom: 1em;
     }
   }
 `;
@@ -59,6 +56,6 @@ const OneLiner = styled.h2`
   font-size: 1.5rem;
 
   ${(props) => props.theme.screen.md} {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 `;
