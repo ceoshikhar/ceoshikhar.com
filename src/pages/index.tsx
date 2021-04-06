@@ -2,7 +2,6 @@ import * as React from "react";
 import styled from "styled-components";
 
 import { Layout } from "../components/Layout";
-import { Spacer } from "../components/Spacer";
 import { ForkOnGitHub } from "../sections/index/ForkOnGitHub";
 import { Hero } from "../sections/index/Hero";
 import { Socials } from "../sections/index/Socials";
@@ -27,9 +26,7 @@ const IndexPage: React.FC<IndexPageProps> = (props) => {
     <Layout pathname={props.location.pathname}>
       <Wrapper>
         <Hero />
-        <Spacer b={64} />
         <WorkTogether />
-        <Spacer b={145} />
         <Socials />
         <ForkOnGitHub />
       </Wrapper>

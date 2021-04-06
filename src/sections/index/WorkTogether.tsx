@@ -10,15 +10,25 @@ export const WorkTogether = () => {
   const Icon = () => <Send size={24} color={theme.color.onPrimary} />;
 
   return (
-    <Tooltip title="Hit me up!" placement="right" arrow>
-      <div>
-        <MailTo href="mailto:ceoshikhar@gmail.com">
-          <Button title="Let's work together" Icon={Icon} />
-        </MailTo>
-      </div>
-    </Tooltip>
+    <Wrapper>
+      <Tooltip title="Hit me up!" placement="right" arrow>
+        <div>
+          <MailTo href="mailto:ceoshikhar@gmail.com">
+            <Button title="Let's work together" Icon={Icon} />
+          </MailTo>
+        </div>
+      </Tooltip>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  margin-bottom: 9em;
+
+  ${(props) => props.theme.screen.md} {
+    margin-bottom: 4em;
+  }
+`;
 
 const MailTo = styled(OutboundLink)`
   text-decoration: none;

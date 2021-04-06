@@ -36,9 +36,9 @@ export const dark: DefaultTheme = {
     onPrimary: "#F0F0F0"
   },
   screen: {
-    xl: `only screen and (max-width: ${px2em(sizes.xl)}px)`,
-    lg: `only screen and (max-width: ${px2em(sizes.lg)}px)`,
-    md: `only screen and (max-width: ${px2em(sizes.md)}px)`,
-    sm: `only screen and (max-width: ${px2em(sizes.sm)}px)`
+    xl: `@media only screen and (max-width: ${px2em(sizes.xl)})`,
+    lg: `@media only screen and (max-width: ${px2em(sizes.lg)})`,
+    md: `@media only screen and (max-width: ${px2em(sizes.md)})`,
+    sm: `@media only screen and (max-width: ${px2em(sizes.sm)})`
   }
 };

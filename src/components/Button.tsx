@@ -1,7 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
 import { IconType } from "react-icons";
-import { Spacer } from "./Spacer";
 
 export interface IButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   title: string;
@@ -18,10 +17,9 @@ export const Button: React.FC<IButtonProps> = (props) => {
     <Container type="button" onClick={onClick} {...rest}>
       <ButtonBody>
         {Icon && (
-          <>
+          <div className="icon-container">
             <Icon />
-            <Spacer r={8} />
-          </>
+          </div>
         )}
         <Title>{title}</Title>
       </ButtonBody>
@@ -42,6 +40,12 @@ const Container = styled.button`
 
   &:focus {
     outline: none;
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5em;
   }
 `;
 
