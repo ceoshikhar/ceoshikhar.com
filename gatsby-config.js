@@ -3,11 +3,11 @@ dotenv.config();
 
 module.exports = {
   siteMetadata: {
-    site: `CEOShikhar`,
+    site: `ceoshikhar`,
     title: `Shikhar Sharma's small space on the internet`,
     author: `Shikhar Sharma`,
-    titleTemplate: `%s - CEOShikhar`,
-    description: `My name is Shikhar Sharma AKA CEOShikhar. An entrepreneur, developer and sometimes an artist. Welcome to my small space on the internet.`,
+    titleTemplate: `%s - ceoshikhar`,
+    description: `My name is Shikhar Sharma. I am an entrepreneur, developer and sometimes an artist. Welcome to my small space on the internet.`,
     siteUrl: `https://ceoshikhar.com`,
     language: `en`,
     color: `#0A0A0A`,
