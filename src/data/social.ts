@@ -4,7 +4,7 @@ import {
   LinkedIn,
   GitHub,
   Twitter,
-  Dev
+  YouTube
 } from "../components/Icons";
 
 interface ISocialDetails {
@@ -15,14 +15,9 @@ interface ISocialDetails {
 
 export const socialData: Array<ISocialDetails> = [
   {
-    title: "LinkedIn",
-    link: "https://linkedin.com/in/ceoshikhar",
-    Icon: LinkedIn
-  },
-  {
-    title: "GitHub",
-    link: "https://github.com/ceoshikhar",
-    Icon: GitHub
+    title: "YouTube",
+    link: "https://www.youtube.com/channel/UC57Jv9O53YSJxie1DjaUTtg",
+    Icon: YouTube
   },
   {
     title: "Instagram",
@@ -35,8 +30,13 @@ export const socialData: Array<ISocialDetails> = [
     Icon: Twitter
   },
   {
-    title: "DEV Community",
-    link: "https://dev.to/ceoshikhar",
-    Icon: Dev
+    title: "GitHub",
+    link: "https://github.com/ceoshikhar",
+    Icon: GitHub
+  },
+  {
+    title: "LinkedIn",
+    link: "https://linkedin.com/in/ceoshikhar",
+    Icon: LinkedIn
   }
 ];

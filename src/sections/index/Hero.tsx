@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
       <StaticImage
         className="image"
         src="../../images/me.png"
-        alt="me"
+        alt="my image"
         placeholder="blurred"
       />
       <Name>SHIKHAR SHARMA</Name>

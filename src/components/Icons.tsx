@@ -6,8 +6,8 @@ import {
   FaInstagramSquare,
   FaLinkedin,
   FaTwitterSquare,
-  FaDev,
-  FaGithubSquare
+  FaGithubSquare,
+  FaYoutubeSquare
 } from "react-icons/fa";
 
 export {
@@ -15,9 +15,9 @@ export {
   FaLinkedin as LinkedIn,
   FaGithubSquare as GitHub,
   FaTwitterSquare as Twitter,
-  FaDev as Dev,
   FiSend as Send,
-  DiGitBranch as ForkGit
+  DiGitBranch as ForkGit,
+  FaYoutubeSquare as YouTube
 };
 
 export type IconType = typeof IconBase;
