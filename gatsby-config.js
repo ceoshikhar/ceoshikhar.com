@@ -7,7 +7,7 @@ module.exports = {
     title: `Shikhar Sharma's small space on the internet`,
     author: `Shikhar Sharma`,
     titleTemplate: `%s - ceoshikhar`,
-    description: `My name is Shikhar Sharma. I am an entrepreneur, developer and sometimes an artist. Welcome to my small space on the internet.`,
+    description: `My name is Shikhar Sharma, also known as "ceoshikhar" on the internet. I am an entrepreneur, developer and sometimes an artist. Welcome to my small space on the internet.`,
     siteUrl: `https://ceoshikhar.com`,
     language: `en`,
     color: `#0A0A0A`,
