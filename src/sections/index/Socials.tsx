@@ -1,9 +1,11 @@
 import * as React from "react";
+
 import styled, { useTheme } from "styled-components";
-import { socialData } from "../../data/social";
-import Tooltip from "@material-ui/core/Tooltip";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+
 import { NiceTransition } from "../../components/Button";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+import Tooltip from "@material-ui/core/Tooltip";
+import { socialData } from "../../data/social";
 
 export const Socials: React.FC = () => {
   const theme = useTheme();
@@ -36,12 +38,13 @@ export const Socials: React.FC = () => {
 };
 
 const Wrapper = styled.div`
-  width: 300px;
+  max-width: 300px;
   display: flex;
-  justify-content: space-between;
   position: relvative;
   transition: ${NiceTransition};
   top: 0;
+  row-gap: 1rem;
+  column-gap: 1rem;
 
   .icon {
     &:hover {

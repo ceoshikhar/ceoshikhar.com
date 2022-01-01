@@ -1,11 +1,4 @@
-import {
-  IconType,
-  Instagram,
-  LinkedIn,
-  GitHub,
-  Twitter,
-  YouTube
-} from "../components/Icons";
+import { GitHub, IconType, LinkedIn } from "../components/Icons";
 
 interface ISocialDetails {
   title: string;
@@ -14,21 +7,6 @@ interface ISocialDetails {
 }
 
 export const socialData: Array<ISocialDetails> = [
-  {
-    title: "YouTube",
-    link: "https://www.youtube.com/channel/UC57Jv9O53YSJxie1DjaUTtg",
-    Icon: YouTube
-  },
-  {
-    title: "Instagram",
-    link: "https://instagram.com/ceoshikhar",
-    Icon: Instagram
-  },
-  {
-    title: "Twitter",
-    link: "https://twitter.com/ceoshikhar",
-    Icon: Twitter
-  },
   {
     title: "GitHub",
     link: "https://github.com/ceoshikhar",
