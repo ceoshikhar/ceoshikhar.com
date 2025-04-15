@@ -1,40 +1,46 @@
-import { Tooltip } from "@material-ui/core";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
-import * as React from "react";
+import { Tooltip } from "react-tooltip";
 import styled, { useTheme } from "styled-components";
+
 import { NiceTransition } from "../../components/Button";
 import { ForkGit } from "../../components/Icons";
 
 export const ForkOnGitHub: React.FC = () => {
-  const theme = useTheme();
+    const theme = useTheme();
 
-  return (
-    <Tooltip title="View source code" placement="left" arrow>
-      <Wrapper>
-        <OutboundLink
-          href="https://github.com/ceoshikhar/ceoshikhar-dot-com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ForkGit className="icon" size={48} color={theme.color.surface} />
-        </OutboundLink>
-      </Wrapper>
-    </Tooltip>
-  );
+    return (
+        <>
+            <Wrapper id="github-fork">
+                <a
+                    href="https://github.com/ceoshikhar/ceoshikhar-dot-com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <ForkGit
+                        className="icon"
+                        size={48}
+                        color={theme.color.surface}
+                    />
+                </a>
+            </Wrapper>
+            <Tooltip anchorSelect="#github-fork" place="left">
+                View source code
+            </Tooltip>
+        </>
+    );
 };
 
 const Wrapper = styled.div`
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: ${NiceTransition};
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: ${NiceTransition};
 
-  .icon {
-    opacity: 15%;
+    .icon {
+        opacity: 15%;
 
-    &:hover {
-      transition: ${NiceTransition};
-      opacity: 100%;
+        &:hover {
+            transition: ${NiceTransition};
+            opacity: 100%;
+        }
     }
-  }
 `;

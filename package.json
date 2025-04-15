@@ -1,60 +1,34 @@
 {
-  "name": "ceoshikhar-dot-com",
-  "version": "1.0.1",
-  "description": "Welcome to my small space on the internet",
-  "private": true,
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{ts,tsx}",
-    "lint": "tslint 'src/**/*.{ts,tsx}'",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
-    "@types/react-helmet": "^6.1.0",
-    "@types/styled-components": "^5.1.7",
-    "gatsby": "^3.2.1",
-    "gatsby-plugin-canonical-urls": "^3.2.0",
-    "gatsby-plugin-gatsby-cloud": "^2.2.0",
-    "gatsby-plugin-google-analytics": "^3.2.0",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-image": "^1.2.0",
-    "gatsby-plugin-manifest": "^3.2.0",
-    "gatsby-plugin-react-helmet": "^4.2.0",
-    "gatsby-plugin-robots-txt": "^1.5.5",
-    "gatsby-plugin-routes": "^1.0.1",
-    "gatsby-plugin-sharp": "^2.14.1",
-    "gatsby-plugin-sitemap": "^3.2.0",
-    "gatsby-plugin-styled-components": "^4.2.0",
-    "gatsby-plugin-typescript": "^2.12.0",
-    "gatsby-source-filesystem": "^3.3.0-next.0",
-    "gatsby-transformer-sharp": "^3.2.0",
-    "react": "16.14.0",
-    "react-dom": "16.14.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^4.2.0",
-    "styled-components": "^5.2.1"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "@typescript-eslint/parser": "^4.15.1",
-    "dotenv": "^8.2.0",
-    "eslint": "^7.20.0",
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.1.5"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "name": "ceoshikhar.com",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -b && vite build",
+        "lint": "eslint .",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-icons": "^5.5.0",
+        "react-router-dom": "^7.5.0",
+        "react-tooltip": "^5.28.1",
+        "styled-components": "^6.1.17"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.21.0",
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "@types/react-helmet": "^6.1.11",
+        "@vitejs/plugin-react": "^4.3.4",
+        "eslint": "^9.21.0",
+        "eslint-plugin-react-hooks": "^5.1.0",
+        "eslint-plugin-react-refresh": "^0.4.19",
+        "globals": "^15.15.0",
+        "typescript": "~5.7.2",
+        "typescript-eslint": "^8.24.1",
+        "vite": "^6.2.0"
+    }
 }

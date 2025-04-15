@@ -4,8 +4,7 @@ export default createGlobalStyle<{ theme: DefaultTheme }>`
 
 /**
  * Fonts:
- * font-family: 'Poppins', sans-serif;
- * font-family: 'Vollkorn', sans-serif;
+ * font-family: 'Karla', sans-serif;
  */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -37,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 
 /**Scrollbar customization */

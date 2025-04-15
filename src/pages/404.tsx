@@ -1,13 +1,15 @@
-import * as React from "react";
+import { useEffect } from "react";
 
-import { navigate } from "gatsby";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+    const navigate = useNavigate();
 
-  return null;
+    useEffect(() => {
+        navigate("/");
+    }, [navigate]);
+
+    return null;
 };
 
 export default NotFound;
