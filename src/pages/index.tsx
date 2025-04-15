@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ForkOnGitHub } from "../sections/index/ForkOnGitHub";
 import { Hero } from "../sections/index/Hero";
 import { Socials } from "../sections/index/Socials";
-import { WriteToMe } from "../sections/index/WriteToMe";
+import { LetsConnect } from "../sections/index/LetsConnect";
 
 const IndexPage: React.FC = () => {
     return (
@@ -12,7 +12,7 @@ const IndexPage: React.FC = () => {
             <Wrapper>
                 <Content>
                     <Hero />
-                    <WriteToMe />
+                    <LetsConnect />
                     <Socials />
                 </Content>
             </Wrapper>

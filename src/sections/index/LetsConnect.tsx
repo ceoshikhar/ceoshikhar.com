@@ -3,14 +3,14 @@ import styled, { useTheme } from "styled-components";
 import { Button } from "../../components/Button";
 import { Send } from "../../components/Icons";
 
-export const WriteToMe = () => {
+export const LetsConnect = () => {
     const theme = useTheme();
     const Icon = () => <Send size={24} color={theme.color.onPrimary} />;
 
     return (
         <>
             <div id="write-to-me">
-                <MailTo href="mailto:ceoshikhar@gmail.com">
+                <MailTo href="mailto:shikhar@ceoshikhar.com">
                     <Button title="Let's connect!" Icon={Icon} />
                 </MailTo>
             </div>
