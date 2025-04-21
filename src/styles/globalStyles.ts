@@ -104,6 +104,12 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: ${(props) => props.theme.color.primary};
+
+  &:focus {
+      outline: none;
+  }
 }
 
 /**

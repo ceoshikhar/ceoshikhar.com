@@ -16,7 +16,15 @@ export const Hero: React.FC = () => {
                 </OneLiner>
                 <OneLiner>
                     I am an active trader, mainly trading equities and currently
-                    working on Arthveda - an analytics dashboard for traders.
+                    working on{" "}
+                    <a
+                        href="https://github.com/MudgalLabs/arthveda"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Arthveda
+                    </a>{" "}
+                    - an analytics dashboard for traders.
                 </OneLiner>
                 <OneLiner>
                     I am a FOSS & self host enthusiast. Everything I build is
