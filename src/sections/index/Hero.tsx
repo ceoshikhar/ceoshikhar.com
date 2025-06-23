@@ -5,7 +5,13 @@ export const Hero: React.FC = () => {
         <Wrapper id="hero">
             <img className="image" src="./images/me.jpeg" alt="my image" />
             <Name>ceoshikhar</Name>
-            <div style={{ textAlign: "left" }}>
+            <div
+                style={{
+                    textAlign: "left",
+                    maxWidth: "900px",
+                    margin: "0 auto",
+                }}
+            >
                 <OneLiner>
                     My name is Shikhar Sharma, also known as <b>ceoshikhar</b>{" "}
                     on the internet.
@@ -15,8 +21,8 @@ export const Hero: React.FC = () => {
                     artist.
                 </OneLiner>
                 <OneLiner>
-                    I am an active trader, mainly trading equities and currently
-                    working on{" "}
+                    I am an active trader, mainly trading equities. I'm also
+                    building{" "}
                     <a
                         href="https://github.com/MudgalLabs/arthveda"
                         target="_blank"
@@ -24,7 +30,8 @@ export const Hero: React.FC = () => {
                     >
                         Arthveda
                     </a>{" "}
-                    - an analytics dashboard for traders.
+                    - trading analytics platform with seamless broker
+                    integrations built exclusively for Indian traders.
                 </OneLiner>
                 <OneLiner>
                     I am a FOSS & self host enthusiast. Everything I build is
@@ -72,9 +79,10 @@ const OneLiner = styled.h2`
     font-family: "Karla";
     font-weight: 400;
     font-size: 1.25rem;
-    line-height: 1.25rem;
+    line-height: 1.75rem;
 
     ${(props) => props.theme.screen.md} {
         font-size: 1rem;
+        line-height: 1.5rem;
     }
 `;
