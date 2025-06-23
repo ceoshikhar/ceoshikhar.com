@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
                     I am an active trader, mainly trading equities. I'm also
                     building{" "}
                     <a
-                        href="https://github.com/MudgalLabs/arthveda"
+                        href="https://arthveda.app"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
