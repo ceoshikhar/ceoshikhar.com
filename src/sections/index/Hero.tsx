@@ -17,25 +17,18 @@ export const Hero: React.FC = () => {
                     on the internet.
                 </OneLiner>
                 <OneLiner>
-                    I am an entrepreneur, software engineer and sometimes an
-                    artist.
+                    I am an entrepreneur, software engineer and a trader.
                 </OneLiner>
                 <OneLiner>
-                    I am an active trader, mainly trading equities. I'm also
-                    building{" "}
+                    I am the founder of{" "}
                     <a
-                        href="https://arthveda.app"
+                        href="https://mudgallabs.com"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Arthveda
+                        Mudgal Labs
                     </a>{" "}
-                    - trading analytics platform with seamless broker
-                    integrations built exclusively for Indian traders.
-                </OneLiner>
-                <OneLiner>
-                    I am a FOSS & self host enthusiast. Everything I build is
-                    and will be FOSS. If it's hosted, it's self hosted by me.
+                    and Mudgal Fund.
                 </OneLiner>
                 <OneLiner>
                     Welcome to my small space on the internet! ♥

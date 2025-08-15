@@ -18,7 +18,7 @@ export const ForkOnGitHub: React.FC = () => {
                     <ForkGit
                         className="icon"
                         size={48}
-                        color={theme.color.surface}
+                        color={theme.color.primary}
                     />
                 </a>
             </Wrapper>
