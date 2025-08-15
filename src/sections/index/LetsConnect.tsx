@@ -10,7 +10,7 @@ export const LetsConnect = () => {
     return (
         <>
             <div id="write-to-me">
-                <MailTo href="mailto:shikhar@ceoshikhar.com">
+                <MailTo href="mailto:hey@ceoshikhar.com">
                     <Button title="Let's connect!" Icon={Icon} />
                 </MailTo>
             </div>

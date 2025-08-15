@@ -25,15 +25,15 @@ export interface IScreen {
 export const dark: DefaultTheme = {
     name: "dark",
     color: {
-        background: "#000A14",
-        background2: "#001429",
+        background: "hsl(220, 39%, 5%)",
+        background2: "hsl(220, 39%, 5%)",
         // Apply `opacity: x%` to get desired surface color.
         // Checkout: https://material.io/design/color/dark-theme.html#properties
-        surface: "#FFFFFF",
-        primary: "#00A8E8",
-        onBackground: "#F0F0F0",
-        onSurface: "#E1E1E1",
-        onPrimary: "#04334D",
+        surface: "hsl(223, 48%, 8%)",
+        primary: "hsl(213, 59%, 59%)",
+        onBackground: "hsl(213, 30%, 70%)",
+        onSurface: "hsl(210, 40%, 98%)",
+        onPrimary: "hsl(210, 40%, 98%)",
     },
     screen: {
         xl: `@media only screen and (max-width: ${px2em(sizes.xl)})`,
