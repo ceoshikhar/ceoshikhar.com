@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const Hero: React.FC = () => {
     return (
         <Wrapper id="hero">
-            <img className="image" src="./images/me.jpeg" alt="my image" />
+            <img
+                className="image"
+                src="./images/me.webp"
+                alt="Shikhar Sharma"
+            />
             <Name>ceoshikhar</Name>
             <div
                 style={{
